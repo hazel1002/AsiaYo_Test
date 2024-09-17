@@ -1,0 +1,6 @@
+@AsiaYo_Test_HostAddress = http://localhost:5287
+
+GET {{AsiaYo_Test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
