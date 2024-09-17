@@ -41,6 +41,20 @@ LIMIT 10;
      ```
 2. 使用索引提示（Index Hints）
  - 使用 `USE INDEX` 或 `FORCE INDEX` 來指定使用的索引
+ 
+ 
+## API 實作測驗
+ 
+### SOLID 原則
+ - 單一職責原則（SRP）：OrderReq 和 Address 類別負責保存訂單相關數據，Order 類別負責檢查和處理訂單的格式和轉換。
+ - 開放封閉原則（OCP）：通過使用 IOrder 接口，我們可以在不修改現有代碼的情況下擴展訂單檢查和轉換邏輯。
+ - 里氏替換原則（LSP）：Order 類別可以替換 IOrder 接口在任何地方使用，而不會影響系統的正確性。
+ - 介面隔離原則（ISP）：IOrder 接口保持精簡，只包含一個方法 ValidateOrder。
+ - 依賴倒轉原則（DIP）：OrderController 依賴於 IOrder 接口，而非具體的實作類別。
+ 
+### 設計模式
+ - Strategy Pattern：定義 IOrder 接口，使訂單檢查與轉換邏輯可以被替換或擴展。
+ - Controller Pattern：OrderController 作為 API 的入口點，分離了請求處理和業務邏輯。
 
 
 
