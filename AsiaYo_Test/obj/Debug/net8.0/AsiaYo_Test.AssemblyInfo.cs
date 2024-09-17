@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AsiaYo_Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+881b28496013b638554581a197d1d5e1fec03b5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AsiaYo_Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AsiaYo_Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

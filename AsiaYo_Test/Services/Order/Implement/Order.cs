@@ -7,10 +7,7 @@ namespace AsiaYo_Test.Services.Order.Implement
     {
         public async Task<IActionResult> ValidateOrder(OrderReq req)
         {
-            var res = new ResponseBase<OrderReq>
-            {
-                Entries = req
-            };
+            var res = req;
             try
             {
                 // 檢查 name

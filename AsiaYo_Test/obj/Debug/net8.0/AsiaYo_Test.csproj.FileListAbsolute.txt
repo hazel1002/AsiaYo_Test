@@ -32,3 +32,4 @@ D:\AsiaYo_Test\AsiaYo_Test\obj\Debug\net8.0\AsiaYo_Test.genruntimeconfig.cache
 D:\AsiaYo_Test\AsiaYo_Test\obj\Debug\net8.0\ref\AsiaYo_Test.dll
 D:\AsiaYo_Test\AsiaYo_Test\bin\Debug\net8.0\nunit.framework.dll
 D:\AsiaYo_Test\AsiaYo_Test\bin\Debug\net8.0\nunit.framework.legacy.dll
+D:\AsiaYo_Test\AsiaYo_Test\obj\Debug\net8.0\AsiaYo_Test.sourcelink.json
