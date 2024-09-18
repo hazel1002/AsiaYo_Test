@@ -34,13 +34,17 @@ LIMIT 10;
 
 ### 優化
 
-1. **建立合適的索引**:
-   - 在 `orders` 表上建立複合索引：
+1. 建立合適的索引:
+ - 根據查詢的 `WHERE` 條件和 `GROUP BY` 子句, 建立mutiple column index, 其中的欄位順序應根據查詢頻率和欄位的獨特性決定 (`created_at` -> `currency` -> `bnb_id` -> `amount`)
+
+ - 在 `orders` 表上建立covering index, 可以保證在查詢時只需訪問索引，不需再回查主表
      ```sql
      CREATE INDEX idx_orders_full ON orders (created_at, currency, bnb_id, amount);
      ```
-2. 使用索引提示（Index Hints）
+  
+2. 使用Index Hints
  - 使用 `USE INDEX` 或 `FORCE INDEX` 來指定使用的索引
+
  
  
 ## API 實作測驗
